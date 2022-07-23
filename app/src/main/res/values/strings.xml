@@ -3,6 +3,11 @@
     <string name="login">LOGIN</string>
     <string name="email">Enter email</string>
     <string name="password">Enter password</string>
+    <string name="phonenumber">Enter phone number</string>
     <string name="forgot">Forgot Password</string>
     <string name="LOGIN">LOGIN</string>
+    <string name="please_enter_name">please enter name</string>
+    <string name="please_enter_password">please enter password</string>
+    <string name="login_succesfull">login successfull</string>
+    <string name="feature_comingsoon">login feature coming soon</string>
 </resources>
