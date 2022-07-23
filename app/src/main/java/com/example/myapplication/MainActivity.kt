@@ -1,9 +1,8 @@
 package com.example.myapplication
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
-import com.example.myapplication.R
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var etEmail: EditText
@@ -44,7 +43,9 @@ class MainActivity : AppCompatActivity() {
         tvForgot.setOnClickListener {
             Toast.makeText(this,resources.getString(R.string.feature_comingsoon),Toast.LENGTH_SHORT).show()
         }
-        
+        etpassword.setOnClickListener{
+            etpassword.length()
+        }
     }
 
 
