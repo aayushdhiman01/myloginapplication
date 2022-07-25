@@ -8,6 +8,10 @@
     <string name="LOGIN">LOGIN</string>
     <string name="please_enter_name">please enter name</string>
     <string name="please_enter_password">please enter password</string>
-    <string name="login_succesfull">login successfull</string>
+    <string name="login_succesfull">login successful</string>
     <string name="feature_comingsoon">login feature coming soon</string>
+    <string name="he">male</string>
+    <string name="she">female</string>
+    <string name="other">other</string>
+    <string name="Specify">Please Specify</string>
 </resources>

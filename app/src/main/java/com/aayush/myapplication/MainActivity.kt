@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         etpassword.setOnClickListener{
             etpassword.length()
         }
+
     }
 
 
