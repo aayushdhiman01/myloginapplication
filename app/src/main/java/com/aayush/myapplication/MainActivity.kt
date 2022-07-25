@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var rbOther:RadioButton
     lateinit var etOtherSpecify:EditText
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -39,6 +38,8 @@ class MainActivity : AppCompatActivity() {
         imgFire.setOnClickListener {
             System.out.println("Image Clicked")
         }
+
+
         etpassword.doOnTextChanged { text,_,_,_->
             if ((text?.length ?:0)<6 || (text?.length ?:0)>10){
                 etpassword.error=resources.getString(R.string.password_length_should_be_between_6_and_10)
@@ -55,6 +56,10 @@ class MainActivity : AppCompatActivity() {
                 etEmail.error=resources.getString(R.string.please_enter_name)
                 etEmail.requestFocus()
             }
+            else if(!email.equals("aayushdhiman@gmail.com")){
+                etEmail.error=resources.getString(R.string.please_enter_name)
+                etEmail.requestFocus()
+            }
             else if(password.isNullOrEmpty()){
                 etpassword.error=resources.getString(R.string.please_enter_password)
                 etpassword.requestFocus()
@@ -63,6 +68,10 @@ class MainActivity : AppCompatActivity() {
                 etpassword.error=resources.getString(R.string.password_length_should_be_between_6_and_10)
                 etpassword.requestFocus()
             }
+            else if(android.util.Patterns.EMAIL_ADDRESS.matcher(etEmail.text.toString()).matches() == false){
+                etEmail.error=resources.getString(R.string.please_enter_name)
+                etEmail.requestFocus()
+            }
             else{
                 Toast.makeText(this,resources.getString(R.string.login_succesfull),Toast.LENGTH_LONG).show()
                 var intent= Intent(this, ForgotPasswordActivity::class.java)
@@ -70,6 +79,7 @@ class MainActivity : AppCompatActivity() {
                 finish()
             }
         }
+
         tvForgot.setOnClickListener {
             var intent= Intent(this, ForgotPasswordActivity::class.java)
             startActivity(intent)
