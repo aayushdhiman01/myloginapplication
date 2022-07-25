@@ -60,6 +60,10 @@ class MainActivity : AppCompatActivity() {
                 etEmail.error=resources.getString(R.string.please_enter_name)
                 etEmail.requestFocus()
             }
+            else if(!password.equals("1234560")){
+                etpassword.error=resources.getString(R.string.please_enter_password)
+                etpassword.requestFocus()
+            }
             else if(password.isNullOrEmpty()){
                 etpassword.error=resources.getString(R.string.please_enter_password)
                 etpassword.requestFocus()
