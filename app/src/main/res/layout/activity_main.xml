@@ -12,8 +12,7 @@
     android:orientation="vertical"
     android:background="@drawable/background"
     tools:context=".MainActivity"
-    tools:ignore="Extra
-    Text">
+    tools:ignore="ExtraText">
 
 <ImageView
     android:layout_width="@dimen/margin_100dp"
@@ -125,7 +124,7 @@
     <EditText
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:id="@+id/etOther"
+        android:id="@+id/etOtherSpecify"
         android:hint="@string/Specify"
         android:visibility="invisible"/>
 

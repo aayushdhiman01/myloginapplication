@@ -1,8 +1,11 @@
 package com.aayush.myapplication
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.doOnTextChanged
 
 class MainActivity : AppCompatActivity() {
     lateinit var etEmail: EditText
@@ -11,6 +14,13 @@ class MainActivity : AppCompatActivity() {
     lateinit var tvForgot: TextView
     lateinit var btnlogin: Button
     lateinit var imgFire:ImageView
+    lateinit var rgGender:RadioGroup
+    lateinit var rbHe:RadioButton
+    lateinit var rbShe:RadioButton
+    lateinit var rbOther:RadioButton
+    lateinit var etOtherSpecify:EditText
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -20,9 +30,22 @@ class MainActivity : AppCompatActivity() {
         tvForgot=findViewById(R.id.tvForgot)
         btnlogin=findViewById(R.id.btnlogin)
         imgFire=findViewById(R.id.imgFire)
+        rgGender=findViewById(R.id.rgGender)
+        rbHe=findViewById(R.id.rbMale)
+        rbShe=findViewById(R.id.rbFemale)
+        rbOther=findViewById(R.id.rbOther)
+        etOtherSpecify=findViewById(R.id.etOtherSpecify)
 
         imgFire.setOnClickListener {
             System.out.println("Image Clicked")
+        }
+        etpassword.doOnTextChanged { text,_,_,_->
+            if ((text?.length ?:0)<6 || (text?.length ?:0)>10){
+                etpassword.error=resources.getString(R.string.password_length_should_be_between_6_and_10)
+        }
+            else{
+                etpassword.error =null
+            }
         }
         btnlogin.setOnClickListener {
             System.out.println("Login Clicked")
@@ -36,17 +59,32 @@ class MainActivity : AppCompatActivity() {
                 etpassword.error=resources.getString(R.string.please_enter_password)
                 etpassword.requestFocus()
             }
+            else if(password.length<6 || password.length>10 ){
+                etpassword.error=resources.getString(R.string.password_length_should_be_between_6_and_10)
+                etpassword.requestFocus()
+            }
             else{
                 Toast.makeText(this,resources.getString(R.string.login_succesfull),Toast.LENGTH_LONG).show()
+                var intent= Intent(this, ForgotPasswordActivity::class.java)
+                startActivity(intent)
+                finish()
             }
         }
         tvForgot.setOnClickListener {
-            Toast.makeText(this,resources.getString(R.string.feature_comingsoon),Toast.LENGTH_SHORT).show()
+            var intent= Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(intent)
+            finish()
         }
-        etpassword.setOnClickListener{
-            etpassword.length()
+        rgGender.setOnCheckedChangeListener { radioGroup, id ->
+            when(id){
+                R.id.rbOther->{
+                    etOtherSpecify.visibility=View.VISIBLE
+                }
+                else->{
+                    etOtherSpecify.visibility=View.INVISIBLE
+                }
+            }
         }
-
     }
 
 
