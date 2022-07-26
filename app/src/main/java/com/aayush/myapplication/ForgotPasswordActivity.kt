@@ -1,5 +1,6 @@
 package com.aayush.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
@@ -14,6 +15,16 @@ class ForgotPasswordActivity : AppCompatActivity() {
         etEmail=findViewById(R.id.etEmail)
         btnForgetPassword=findViewById(R.id.tvForgot)
 
-        btnForgetPassword.setOnClickListener {  }
+        btnForgetPassword.setOnClickListener {
+            if(etEmail.text.toString().isNullOrEmpty()){
+                etEmail.error=resources.getString(R.string.please_enter_name)
+                etEmail.requestFocus()
+            }
+            else{
+                var intent=Intent(this,OTP_Activity::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }
     }
 }

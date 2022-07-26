@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         tvForgot.setOnClickListener {
-            var intent= Intent(this, ForgotPasswordActivity::class.java)
+            var intent= Intent(this,ForgotPasswordActivity::class.java)
             startActivity(intent)
             finish()
         }
