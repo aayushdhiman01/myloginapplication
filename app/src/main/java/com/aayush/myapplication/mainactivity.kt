@@ -7,7 +7,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doOnTextChanged
 
-class MainActivity : AppCompatActivity() {
+class mainactivity : AppCompatActivity() {
     lateinit var etEmail: EditText
     lateinit var etpassword: EditText
     lateinit var etPhonenumber: EditText
@@ -78,14 +78,14 @@ class MainActivity : AppCompatActivity() {
             }
             else{
                 Toast.makeText(this,resources.getString(R.string.login_succesfull),Toast.LENGTH_LONG).show()
-                var intent= Intent(this, LoginActivity::class.java)
+                var intent= Intent(this, login_activity::class.java)
                 startActivity(intent)
                 finish()
             }
         }
 
         tvForgot.setOnClickListener {
-            var intent= Intent(this,ForgotPasswordActivity::class.java)
+            var intent= Intent(this,forgot_password_activity::class.java)
             startActivity(intent)
             finish()
         }

@@ -3,9 +3,9 @@ package com.aayush.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class OTP_Activity : AppCompatActivity() {
+class login_activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_otp)
+        setContentView(R.layout.login_activity)
     }
 }

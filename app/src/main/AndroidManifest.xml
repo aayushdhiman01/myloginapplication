@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".OTP_Activity"
+            android:name=".otp_activity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".login_activity"
             android:exported="false" />
         <activity
-            android:name=".ForgotPasswordActivity"
+            android:name=".forgot_password_activity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".mainactivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -6,12 +6,12 @@ import android.os.Bundle
 import android.widget.EditText
 import android.widget.TextView
 
-class ForgotPasswordActivity : AppCompatActivity() {
+class forgot_password_activity : AppCompatActivity() {
     lateinit var etEmail:EditText
     lateinit var btnForgetPassword:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main3)
+        setContentView(R.layout.forgotpassword)
         etEmail=findViewById(R.id.etEmail)
         btnForgetPassword=findViewById(R.id.tvForgot)
 
@@ -21,7 +21,7 @@ class ForgotPasswordActivity : AppCompatActivity() {
                 etEmail.requestFocus()
             }
             else{
-                var intent=Intent(this,OTP_Activity::class.java)
+                var intent=Intent(this,otp_activity::class.java)
                 startActivity(intent)
                 finish()
             }
