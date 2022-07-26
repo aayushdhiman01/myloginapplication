@@ -20,10 +20,6 @@ class forgot_password_activity : AppCompatActivity() {
                 etEmail.error=resources.getString(R.string.please_enter_name)
                 etEmail.requestFocus()
             }
-            else if(!etEmail.equals("aayushdhiman@gmail.com")){
-                etEmail.error=resources.getString(R.string.please_enter_name)
-                etEmail.requestFocus()
-            }
             else{
                 var intent=Intent(this,otp_activity::class.java)
                 intent.putExtra("emailId", etEmail.text.toString())
