@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             }
             else{
                 Toast.makeText(this,resources.getString(R.string.login_succesfull),Toast.LENGTH_LONG).show()
-                var intent= Intent(this, ForgotPasswordActivity::class.java)
+                var intent= Intent(this, LoginActivity::class.java)
                 startActivity(intent)
                 finish()
             }
