@@ -14,10 +14,11 @@
         <entry key="app/src/main/res/layout/Login_Activity.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_login2.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18118195956454122" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main3.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_otp.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.19" />
         <entry key="app/src/main/res/layout/forgotpassword.xml" value="0.2518518518518518" />
         <entry key="app/src/main/res/layout/login_activity.xml" value="0.1" />
       </map>
