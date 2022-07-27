@@ -61,6 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
         android:hint="@string/password"
+        android:inputType="textPassword"
         android:paddingHorizontal="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
