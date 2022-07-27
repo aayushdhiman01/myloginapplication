@@ -21,9 +21,9 @@ class ActivitySignUp : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
         tvSignup = findViewById(R.id.tvSignup)
-        etEmail = findViewById(R.id.etEmail)
-        etpassword = findViewById(R.id.etpassword)
-        etPhonenumber = findViewById(R.id.etPhonenumber)
+        etEmail = findViewById(R.id.etEmail_S)
+        etpassword = findViewById(R.id.etpassword_S)
+        etPhonenumber = findViewById(R.id.etPhonenumber_S)
         rgGender = findViewById(R.id.rgGender)
         rbHe = findViewById(R.id.rbMale)
         rbShe = findViewById(R.id.rbFemale)
@@ -39,7 +39,7 @@ class ActivitySignUp : AppCompatActivity() {
             }
         }
         tvSignup.setOnClickListener {
-            Toast.makeText(this, resources.getString(R.string.login_succesfull), Toast.LENGTH_LONG)
+            Toast.makeText(this, "SignUp Successful", Toast.LENGTH_LONG)
                 .show()
         }
         rgGender.setOnCheckedChangeListener { radioGroup, id ->

@@ -12,6 +12,8 @@
         <entry key="..\:/myapplication/app/src/main/res/layout/activity_otp.xml" value="0.1" />
         <entry key="..\:/myapplication/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/myapplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.197" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/login_activity.xml" value="0.1" />
       </map>
     </option>
   </component>
