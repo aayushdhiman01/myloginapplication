@@ -25,5 +25,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="GET_OTP">"GET OTP"</string>
+    <string name="tvSignup">"SIGN UP"</string>
+
 
 </resources>

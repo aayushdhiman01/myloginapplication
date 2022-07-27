@@ -114,21 +114,34 @@
         android:id="@+id/etOtherSpecify"
         android:hint="@string/Specify"
         android:visibility="invisible"/>
+
     <Button
         android:id="@+id/btnlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/LOGIN"
         android:layout_margin="20dp"
         android:background="@color/purple_200"
+        android:gravity="center"
+        android:text="@string/LOGIN"
         android:textColor="@color/purple_700"
         android:textStyle="bold"
-        android:gravity="center"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSignup"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:text="SignUp"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 </LinearLayout>
 </ScrollView>

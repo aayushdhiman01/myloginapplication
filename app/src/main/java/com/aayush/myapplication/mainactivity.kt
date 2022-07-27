@@ -9,6 +9,7 @@ import androidx.core.widget.doOnTextChanged
 
 class mainactivity : AppCompatActivity() {
     lateinit var etEmail: EditText
+    lateinit var tvSignup:TextView
     lateinit var etpassword: EditText
     lateinit var etPhonenumber: EditText
     lateinit var tvForgot: TextView
@@ -23,9 +24,11 @@ class mainactivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        tvSignup=findViewById(R.id.tvSignup)
         etEmail=findViewById(R.id.etEmail)
         etpassword=findViewById(R.id.etpassword)
         etPhonenumber=findViewById(R.id.etPhonenumber)
+
         tvForgot=findViewById(R.id.tvForgot)
         btnlogin=findViewById(R.id.btnlogin)
         imgFire=findViewById(R.id.imgFire)
@@ -86,6 +89,11 @@ class mainactivity : AppCompatActivity() {
 
         tvForgot.setOnClickListener {
             var intent= Intent(this,forgot_password_activity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        tvSignup.setOnClickListener {
+            var intent= Intent(this,ActivitySignUp::class.java)
             startActivity(intent)
             finish()
         }
