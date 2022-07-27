@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="login">LOGIN</string>
-    <string name="email">Enter email</string>
-    <string name="password">Enter password</string>
-    <string name="phonenumber">Enter phone number</string>
-    <string name="forgot">Forgot Password</string>
-    <string name="LOGIN">LOGIN</string>
-    <string name="please_enter_name">please enter name</string>
-    <string name="please_enter_password">please enter password</string>
-    <string name="login_succesfull">login successful</string>
-    <string name="feature_comingsoon">login feature coming soon</string>
+    <string name="app_name" translatable="false">My Application</string>
+    <string name="login" translatable="false">LOGIN</string>
+    <string name="email" translatable="false">Enter email</string>
+    <string name="password" translatable="false">Enter password</string>
+    <string name="phonenumber" translatable="false">Enter phone number</string>
+    <string name="forgot" translatable="false">Forgot Password</string>
+    <string name="LOGIN" translatable="false">LOGIN</string>
+    <string name="please_enter_name" translatable="false">please enter name</string>
+    <string name="please_enter_password" translatable="false">please enter password</string>
+    <string name="login_succesfull" translatable="false">login successful</string>
+    <string name="feature_comingsoon" translatable="false">login feature coming soon</string>
     <string name="he">male</string>
     <string name="she">female</string>
     <string name="other">other</string>
