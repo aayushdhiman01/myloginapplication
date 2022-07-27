@@ -11,7 +11,9 @@ class ActivitySignUp : AppCompatActivity() {
     lateinit var etEmail: EditText
     lateinit var tvSignup: TextView
     lateinit var etpassword: EditText
+    lateinit var etpassword_S2: EditText
     lateinit var etPhonenumber: EditText
+
     lateinit var rgGender: RadioGroup
     lateinit var rbHe: RadioButton
     lateinit var rbShe: RadioButton
@@ -23,6 +25,7 @@ class ActivitySignUp : AppCompatActivity() {
         tvSignup = findViewById(R.id.tvSignup)
         etEmail = findViewById(R.id.etEmail_S)
         etpassword = findViewById(R.id.etpassword_S)
+        etpassword_S2 = findViewById(R.id.etpassword_S2)
         etPhonenumber = findViewById(R.id.etPhonenumber_S)
         rgGender = findViewById(R.id.rgGender)
         rbHe = findViewById(R.id.rbMale)
@@ -37,6 +40,9 @@ class ActivitySignUp : AppCompatActivity() {
             } else {
                 etpassword.error = null
             }
+        }
+        etpassword_S2.doOnTextChanged { text,_,_, _ ->
+
         }
         tvSignup.setOnClickListener {
             Toast.makeText(this, "SignUp Successful", Toast.LENGTH_LONG)
