@@ -22,7 +22,7 @@ class forgot_password_activity : AppCompatActivity() {
             }
             else{
                 var intent=Intent(this,otp_activity::class.java)
-                intent.putExtra("emailId", etEmail.text.toString())
+                intent.putExtra("email", etEmail.text.toString())
                 startActivity(intent)
                 finish()
             }
